@@ -1,0 +1,1099 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body {
+				margin: 0 auto;
+			}
+			
+			#header {
+				background: url("img/bg_image.jpg");
+			}
+			
+			div {
+				display: block;
+			}
+			
+			#daohang_top {
+				width: 1424px;
+				height: 80px;
+				background-color: black;
+			}
+			
+			#logo {
+				width: 1424px;
+				height: 40px;
+				margin-left: 80px;
+				float: left;
+			}
+			
+			#pic {
+				width: 1424px;
+				height: 365px;
+				margin-left: 80px;
+			}
+			
+			#daohang_bottom {
+				width: 1424px;
+				height: 163px;
+				margin-left: 80px;
+			}
+			
+			.logo1 {
+				height: 80px;
+				width: 240px;
+				float: left;
+				margin-left: 50px;
+				margin-top: 2px;
+			}
+			
+			.lists {
+				list-style: none;
+			}
+			
+			li {
+				display: list-item;
+				margin: 25px;
+			}
+			
+			.list {
+				text-align: center;
+				float: left;
+			}
+			
+			.list a {
+				color: white;
+				text-decoration: none;
+			}
+			
+			#logo img {
+				float: left;
+				margin-top: 4px;
+			}
+			
+			#top_left {
+				float: left;
+				width: 260px;
+			}
+			
+			#top_middle {
+				float: left;
+				width: 750px;
+			}
+			
+			#top_right {
+				float: left;
+				width: 335px;
+			}
+			
+			.top_left_name {
+				color: #10d7ba;
+				font-size: 50px;
+				font-weight: 600;
+			}
+			
+			.top_left_desc {
+				color: whitesmoke;
+				font-size: 10px;
+			}
+			
+			.top_left_href {
+				border: 2px solid #10d7ba;
+				text-align: center;
+				background-color: black;
+				width: 150px;
+				height: 40px;
+				margin-top: 17px;
+				line-height: 40px;
+			}
+			
+			#top_left a {
+				text-decoration: none;
+				color: #10d7ba;
+			}
+			
+			.ganenji {
+				float: left;
+				width: 78px;
+				margin-top: 30px;
+			}
+			
+			.dazuozhan {
+				float: left;
+				width: 640px;
+				margin-top: 30px;
+			}
+			
+			.erweima {
+				width: 110px;
+				height: 110px;
+				float: right;
+				margin-top: 190px;
+			}
+			
+			.top_right_name {
+				width: 105px;
+				float: left;
+				font-size: 10px;
+				color: grey;
+				padding-left: 228px;
+				padding-bottom: 5px;
+			}
+			
+			.top_right_version {
+				float: left;
+				width: 140px;
+				font-size: 12px;
+				font-weight: 600;
+				color: grey;
+			}
+			
+			.versionDesc {
+				border: 3px solid #10D7BA;
+				background-color: black;
+				text-align: center;
+				height: 19px;
+				width: 90px;
+				float: left;
+				font-size: 12px;
+				color: #10D7BA;
+			}
+			
+			.download {
+				width: 220px;
+				height: 110px;
+				float: left;
+			}
+			
+			.danghang_bottom_package,
+			.daohang_bottom_events,
+			.daohang_bottom_gameinfo,
+			.daohang_bottom_newservice,
+			.daohang_bottom_vido {
+				float: left;
+				width: 112px;
+				height: 105px;
+				border-right: grey 1px solid;
+				background-color: #353f5f;
+				text-align: center;
+				padding-top: 10px;
+				color: white;
+			}
+			
+			.daohang_bottom_login {
+				float: left;
+				height: 115px;
+				width: 455px;
+				background-color: #384766;
+			}
+			
+			.userlogin {
+				width: 455px;
+				height: 78px;
+				margin: 18px 20px;
+			}
+			
+			.userhead {
+				width: 82px;
+				height: 82px;
+				float: left;
+			}
+			
+			.user_login {
+				float: left;
+				margin-left: 20px;
+				font-size: 12px;
+				color: whitesmoke;
+			}
+			
+			.user_login span {
+				color: steelblue;
+			}
+			
+			.welcome {
+				font-size: 14px;
+				line-height: 25px;
+			}
+			
+			.welcome a {
+				text-decoration: none;
+				color: #10d7ba;
+			}
+			
+			#section {
+				width: 1424px;
+				height: 840px;
+				background-color: ghostwhite;
+			}
+			
+			.main {
+				width: 1240px;
+				height: 808px;
+				margin-left: 73px;
+				margin-top: 10px;
+			}
+			
+			.main_left {
+				float: left;
+				width: 600px;
+				height: 800px;
+			}
+			
+			.main_right {
+				float: left;
+				width: 600px;
+				height: 800px;
+				margin-left: 28px;
+			}
+			
+			#img2 {
+				width: 595px;
+				height: 345px;
+			}
+			
+			.roll {
+				margin-top: 3px;
+				width: 595px;
+				height: 45px;
+			}
+			
+			.matchcenter {
+				margin-top: 3px;
+				width: 595px;
+				height: 45px;
+			}
+			
+			.flag {
+				width: 30px;
+				height: 40px;
+				float: left;
+				padding-right: 7px;
+				color: #808080;
+				font-weight: 600;
+			}
+			
+			.match {
+				width: 150px;
+				height: 40px;
+				float: left;
+				font-size: 22px;
+				font-weight: 600;
+				color: #808080;
+				padding-top: 4px;
+			}
+			
+			.entermatch {
+				width: 150px;
+				height: 30px;
+				margin-left: 447px;
+				text-align: right;
+				padding-top: 9px;
+			}
+			
+			.entermatch a {
+				font-weight: 500;
+				color: #808080;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			
+			.matchtable {
+				width: 595px;
+				height: 35px;
+				margin-top: 3px;
+			}
+			
+			.matchtable_list {
+				float: left;
+				width: 97px;
+				height: 26px;
+				font-weight: 600;
+				color: #808080;
+				text-align: center;
+				padding-top: 7px;
+			}
+			
+			.matchlist {
+				width: 595px;
+				height: 310px;
+				margin-top: 3px;
+			}
+			
+			.matchlist_left {
+				width: 158px;
+				height: 307px;
+				float: left;
+			}
+			
+			.matchlist_left_top {
+				width: 156px;
+				height: 253px;
+			}
+			
+			.matchlist_left_bot {
+				width: 156px;
+				height: 50px;
+			}
+			
+			.matchlist_right {
+				width: 410px;
+				height: 307px;
+				float: left;
+				margin-left: 20px;
+			}
+			
+			.matchlist_right a {
+				text-decoration: none;
+			}
+			
+			.matchlist_right_desc {
+				margin-top: 12px;
+				font-size: 14px;
+			}
+			
+			.matchlist_right_info_list {
+				margin-top: 10px;
+				font-size: 17px;
+				font-weight: 530;
+			}
+			
+			.news {
+				width: 595px;
+				height: 380px;
+			}
+			
+			.enter {
+				width: 595px;
+				height: 260px;
+				margin-top: 30px;
+			}
+			
+			.table_news {
+				width: 595px;
+				height: 35px;
+			}
+			
+			.first {
+				width: 595px;
+				height: 35px;
+			}
+			
+			.items {
+				width: 595px;
+				height: 35px;
+				line-height: 35px;
+			}
+			
+			.items a {
+				color: #696969;
+			}
+			
+			.table_news_name {
+				float: left;
+				width: 130px;
+				height: 34px;
+				text-align: center;
+				font-size: 24px;
+				font-weight: 600;
+				color: #808080;
+			}
+			
+			.more {
+				float: left;
+				width: 64px;
+				height: 34px;
+				text-align: center;
+				font-size: 18px;
+				font-weight: 600;
+			}
+			
+			.current {
+				width: 130px;
+				height: 3px;
+				background-color: #DCDCDC;
+				float: left;
+			}
+			
+			.current2 {
+				float: right;
+				width: 40px;
+				height: 3px;
+				background-color: #DCDCDC;
+				margin-right: 25px;
+			}
+			
+			.first {
+				font-size: 20px;
+				font-weight: 600;
+				height: 30px;
+				margin-top: 10px;
+				text-align: center;
+			}
+			
+			.first a {
+				color: #10D7BA;
+			}
+			
+			.main_right a {
+				text-decoration: none;
+				color: #808080;
+			}
+			
+			.items {
+				width: 595px;
+				height: 35px;
+				font-weight: 600;
+			}
+			
+			.news_type {
+				width: 50px;
+				height: 30px;
+				float: left;
+				background-color: #DCDCDC;
+				font-size: 16px;
+				text-align: center;
+				color: #808080;
+				padding-top: -2px;
+			}
+			
+			.news_date {
+				float: right;
+				color: #696969;
+			}
+			
+			.tips {
+				width: 595px;
+				height: 42px;
+				background-color: #808080;
+				text-align: center;
+				line-height: 42px;
+			}
+			
+			.tips a {
+				color: #DCDCDC;
+			}
+			
+			.enter_tittle {
+				width: 595px;
+				height: 50px;
+			}
+			
+			.enter_tittle_img {
+				width: 45px;
+				height: 45px;
+				float: left;
+			}
+			
+			.enter_tittle_desc {
+				width: 129px;
+				height: 30px;
+				padding-top: 15px;
+				color: #808080;
+				font-weight: 600;
+				font-size: 20px;
+				text-align: center;
+			}
+			
+			.enter_brand {
+				width: 595px;
+				height: 315px;
+			}
+			
+			.enter_brand_list {
+				width: 112px;
+				height: 90px;
+				float: left;
+				background-color: white;
+				margin-right: 7px;
+				margin-top: 7px;
+				text-align: center;
+			}
+			
+			.enter_brand_list a {
+				color: #808080;
+			}
+			
+			#img2 {
+				width: 595px;
+				height: 346px;
+			}
+			
+			.roll {
+				width: 595px;
+				height: 40px;
+			}
+			
+			.roll_item {
+				text-align: center;
+				width: 119px;
+				height: 37px;
+				line-height: 37px;
+				float: left;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			
+			#footer {
+				width: 1424px;
+				height: 300px;
+				background-color: whitesmoke;
+			}
+			
+			.footer_top {
+				width: 1244px;
+				height: 140px;
+				margin-left: 74px;
+			}
+			
+			.footer_bot {
+				width: 1244px;
+				height: 154px;
+				margin-left: 74px;
+			}
+			
+			.footer_top_left {
+				width: 412px;
+				height: 124px;
+				float: left;
+			}
+			
+			.footer_top_mid {
+				width: 412px;
+				height: 124px;
+				float: left;
+			}
+			
+			.footer_top_right {
+				width: 412px;
+				height: 124px;
+				float: left;
+			}
+			
+			.footer_top_left_erweima {
+				width: 69px;
+				height: 69px;
+				float: left;
+				margin-top: 35px;
+			}
+			
+			.footer_top_left_hreo {
+				font-size: 15px;
+				font-weight: 600;
+				width: 300px;
+				height: 15px;
+				margin-top: 40px;
+				margin-left: 10px;
+				float: left;
+			}
+			
+			.footer_top_left_download {
+				width: 300px;
+				height: 50px;
+				margin-top: 15px;
+				margin-left: 10px;
+				float: left;
+				font-size: 13px;
+				color: #808080;
+			}
+			
+			.footer_top_mid_top {
+				font-size: 15px;
+				font-weight: 600;
+				width: 350px;
+				height: 15px;
+				margin-top: 40px;
+				margin-left: 10px;
+				float: left;
+			}
+			
+			.footer_top_mid_bot {
+				width: 350px;
+				height: 50px;
+				margin-top: 15px;
+				margin-left: 10px;
+				float: left;
+				font-size: 13px;
+				float: left;
+			}
+			
+			.footer_top_mid_bot div {
+				float: left;
+				color: #808080;
+				margin-left: 4px;
+			}
+			
+			.footer_top_right_select {
+				width: 400px;
+				height: 80px;
+				float: right;
+				margin-top: 42px;
+			}
+			
+			select {
+				width: 250px;
+				height: 50px;
+				color: #808080;
+				font-weight: 600;
+				margin-left: 45px;
+			}
+			
+			.footer_bot_left {
+				width: 412px;
+				height: 80px;
+				float: left;
+				margin-top: 2px;
+				padding-top: 10px;
+			}
+			
+			hr {
+				border: 2px solid #DCDCDC;
+			}
+			
+			.footer_bot_right {
+				width: 725px;
+				height: 110px;
+				margin-top: 10px;
+				margin-left: 499px;
+			}
+			
+			.footer_bot_right a {
+				text-decoration: none;
+				color: #808080;
+				font-size: 14px;
+			}
+			
+			.copy {
+				width: 725px;
+				height: 18px;
+				font-size: 14px;
+				color: #808080;
+			}
+			
+			.footer_bot_right span {
+				font-size: 14px;
+				color: #808080;
+			}
+		</style>
+		<script>
+			var x = 0;
+
+			function flash() {
+				var imgs = document.getElementById("img2").getElementsByTagName("img");
+				var imgsdesc = document.getElementsByClassName("roll_item");
+				for(var i = 0; i < imgs.length; i++) {
+					if(x == i) {
+						imgs[i].style.display = "block";
+						imgsdesc[i].style.backgroundColor = "#10D7BA";
+						imgsdesc[i].style.color = "white";
+					} else {
+						imgs[i].style.display = "none";
+						imgsdesc[i].style.backgroundColor = "gainsboro";
+						imgsdesc[i].style.color = "black";
+					}
+				}
+				x++;
+				if(x == imgs.length) {
+					x = 0;
+				}
+			}
+
+			function showPro(index) {
+				x = index;
+				stopRoll();
+				var imgs = document.getElementById("img2").getElementsByTagName("img");
+				var imgsdesc = document.getElementsByClassName("roll_item");
+				for(var i = 0; i < imgs.length; i++) {
+					if(i == index) {
+						imgs[i].style.display = "block";
+						imgsdesc[i].style.backgroundColor = "#10D7BA";
+						imgsdesc[i].style.color = "white";
+					} else {
+						imgs[i].style.display = "none";
+						imgsdesc[i].style.backgroundColor = "gainsboro";
+						imgsdesc[i].style.color = "black";
+					}
+				}
+			}
+
+			var imgsTimer;
+
+			function startRoll() {
+				imgsTimer = window.setInterval(flash, 2000);
+			}
+
+			function stopRoll() {
+				window.clearInterval(imgsTimer);
+			}
+		</script>
+	</head>
+
+	<body onload="startRoll()">
+		<!-- 头部 -->
+		<div id="header">
+			<div id="daohang_top">
+				<ul class=lists>
+					<li class="logo1"><img src="img/logo.jpg"></li>
+					<li class="list">
+						<a href="#">官方首页<br><span>HOME</span></a>
+					</li>
+					<li class="list">
+						<a href="#">游戏资料<br><span>GAME INFO</span></a>
+					</li>
+					<li class="list">
+						<a href="#">商城|合作<br><span>SPORT</span></a>
+					</li>
+					<li class="list">
+						<a href="#">用户互动<br><span>CUMMUNITY</span></a>
+					</li>
+					<li class="list">
+						<a href="#">赛事中心<br><span>EVENTS</span></a>
+					</li>
+					<li class="list">
+						<a href="#">自助系统<br><span>SYSTEM</span></a>
+					</li>
+					<li class="list">
+						<a href="#">个人中心<br><span>USER SENTER</span></a>
+					</li>
+				</ul>
+			</div>
+			<div id="logo">
+				<img src="img/logo1.jpg">
+			</div>
+			<div id="pic">
+				<div id="top_left">
+					<div class="top_left_name">春季大作战</div>
+					<div class="top_left_desc">召唤师春季征战峡谷，赢五重奖励和专属关怀。</div>
+					<a href="#">
+						<div class="top_left_href">查看详情</div>
+					</a>
+				</div>
+				<div id="top_middle">
+					<div class="ganenji">
+						<img src="img/ganen.png">
+					</div>
+					<div class="dazuozhan">
+						<img src="img/logo_big.png">
+					</div>
+				</div>
+				<div id="top_right">
+					<div class="erweima">
+						<img src="img/erweima.png">
+					</div>
+					<div class="top_right_name">下载掌上英雄联盟</div>
+					<div class="top_right_version">当前游戏版本：<span style="color:#10D7BA;font-size: 16px;">ver 7.5</span></div>
+					<a href="#">
+						<div class="versionDesc">版本详情</div>
+					</a>
+				</div>
+			</div>
+
+			<div id="daohang_bottom">
+				<div class="download">
+					<a href="#"><img src="img/download.png"></a>
+				</div>
+				<div class="danghang_bottom_package">
+					<img src="img/public-spr_05.png"><br>
+					<div>新手礼包</div>
+					<div class="gift">新手任务好礼</div>
+				</div>
+				<div class="daohang_bottom_vido">
+					<img src="img/public-spr_06.png"><br>
+					<div>视频中心</div>
+					<div class="gift">最新最全视频</div>
+				</div>
+				<div class="daohang_bottom_events">
+					<img src="img/public-spr_07.png"><br>
+					<div>赛事中心</div>
+					<div class="gift">权威赛事数据</div>
+				</div>
+				<div class="daohang_bottom_gameinfo">
+					<img src="img/public-spr_08.png"><br>
+					<div>游戏资料</div>
+					<div class="gift">海量英雄资料</div>
+				</div>
+				<div class="daohang_bottom_newservice">
+					<img src="img/public-spr_02.png"><br>
+					<div>新版客户端</div>
+					<div class="gift">用户体验升级</div>
+				</div>
+
+				<div class="daohang_bottom_login">
+					<div class="userlogin">
+						<div class="userhead"><img src="img/logo2.png"></div>
+						<div class="user_login">
+							<div class="welcome">亲爱的召唤师，欢迎
+								<a href="#">登陆</a>
+							</div>
+							<p><span>登陆后查看自己的英雄联盟游戏信息，包括</span><br> 召唤师等级、段位信息、游戏胜场数、账户信息、声望值 <span>等。</span>
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 内容 -->
+		<div id="section">
+			<div class="main">
+				<div class="main_left">
+					<div id="img2">
+						<div><img src="img/top1.png" width="595px" height="350px" style="display:block" onmousemove="stopRoll()" onmouseout="startRoll()"></div>
+						<div><img src="img/top2.png" width="595px" height="350px" style="display:none" onmousemove="stopRoll()" onmouseout="startRoll()"></div>
+						<div><img src="img/top3.png" width="595px" height="350px" style="display:none" onmousemove="stopRoll()" onmouseout="startRoll()"></div>
+						<div><img src="img/top4.png" width="595px" height="350px" style="display:none" onmousemove="stopRoll()" onmouseout="startRoll()"></div>
+						<div><img src="img/top5.png" width="595px" height="350px" style="display:none" onmousemove="stopRoll()" onmouseout="startRoll()"></div>
+					</div>
+					<div class="roll">
+						<div class="roll_item" style="background-color: #10D7BA; color: white;" onmouseover="showPro(0)" onmouseout="startRotate()">召唤师春季大作战</div>
+						<div class="roll_item" onmouseover="showPro(1)" onmouseout="startRoll()">玩具大战皮肤上架</div>
+						<div class="roll_item" onmouseover="showPro(2)" onmouseout="startRoll()">4月8号PLP预告</div>
+						<div class="roll_item" onmouseover="showPro(3)" onmouseout="startRoll()">春季峡谷重逢</div>
+						<div class="roll_item" onmouseover="showPro(4)" onmouseout="startRoll()">春季首胜挑战赛</div>
+
+					</div>
+					<div class="matchcenter">
+						<div class="flag"><img src="img/public-spr_29.png"></div>
+						<div class="match">赛事中心</div>
+						<div class="entermatch">
+							<a href="#">进入赛事中心</a>
+						</div>
+					</div>
+					<div class="matchtable">
+						<div class="matchtable_list" style="color:#10D7BA">职业联赛</div>
+						<div class="matchtable_list">甲级职业联赛</div>
+						<div class="matchtable_list">德玛西亚杯</div>
+						<div class="matchtable_list">高校联赛</div>
+						<div class="matchtable_list">城市英雄争霸</div>
+						<div class="matchtable_list">王者峡谷</div>
+					</div>
+					<div class="matchlist">
+						<div class="matchlist_left">
+							<div class="matchlist_left_top">
+								<img src="img/macth1.png" width="155px" height="240px">
+							</div>
+							<div class="matchlist_left_bot">
+								<img src="img/inter.png" width="155px" height="40px">
+							</div>
+						</div>
+						<div class="matchlist_right">
+							<a href="#" class="matchlist_right_a" style="color: #10D7BA;font-size: 30px;font-weight: 600;">2017英雄联盟职业联赛春季赛</a>
+							<div class="matchlist_righ_desc">时间：2017-01-19-2017-04-30</div>
+							<div class="matchlist_righ_desc">地点：上海正大广场9楼</div>
+							<hr style="border:solid 1px #DCDCDC;">
+							<div class="matchlist_right_info">
+								<div class="matchlist_right_info_list">征服者卡尔玛—信息公布</div>
+								<div class="matchlist_right_info_list">4月6日LPL预告 Doinb与侯爷谁更强？</div>
+								<div class="matchlist_right_info_list">巅峰的名义 谁才是LPL最强选手？</div>
+								<div class="matchlist_right_info_list">LPL上周回顾 RNG/WE/EDG已锁定季后赛</div>
+								<div class="matchlist_right_info_list">4月8日驯龙高手Condi迎战最强大脑Meiko</div>
+								<div class="matchlist_right_info_list">Clid盲僧再现神龙摆尾 Doinb率QG双杀WE</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main_right">
+					<div class="news">
+						<div class="table_news">
+							<div class="table_news_name" style="color:#10D7BA">综合</div>
+							<div class="table_news_name">公告</div>
+							<div class="table_news_name">赛事</div>
+							<div class="table_news_name">论坛</div>
+							<div class="more">
+								<a href="#">...</a>
+							</div>
+							<div class="current" style="background-color:#10D7BA"></div>
+							<div class="current"></div>
+							<div class="current"></div>
+							<div class="current"></div>
+							<div class="current2"></div>
+						</div>
+						<div class="first">
+							<a href="#">《联盟抢先看》带你抢先体验新英雄</a>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">感恩季·春季大作战主题活动开启</a></span>
+							<span class="news_date">03/23</span>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">4月6日解说LCK的小姐姐要来LPL啦</a></span>
+							<span class="news_date">04/06</span>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">新英雄技能解密：洛与霞</a></span>
+							<span class="news_date">04/05</span>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">4月7日免费英雄更换公告</a></span>
+							<span class="news_date">04/05</span>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">英雄联盟宇宙会客厅——德玛西亚微访谈活动</a></span>
+							<span class="news_date">04/05</span>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">巅峰的名义，谁才是LPL最强选手</a></span>
+							<span class="news_date">04/06</span>
+						</div>
+						<div class="items">
+							<div class=news_type>新闻</div>
+							<span class="news_content"><a href="#">如何拯救一条龙</a></span>
+							<span class="news_date">04/07</span>
+						</div>
+						<div class="tips">
+							<a href="#">【调研】留下你的意见，我们会做得更好！</a>
+						</div>
+					</div>
+					<div class="enter">
+						<div class="enter_tittle">
+							<div class=enter_tittle_img>
+								<img src="img/public-spr_12.png">
+							</div>
+							<div class=enter_tittle_desc>快速入口</div>
+						</div>
+						<div class="enter_brand">
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_33.png" width="80px" height="50px"></div>
+									英雄宇宙联盟
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_35.png" width="80px" height="50px"></div>
+									周边商城
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_15.png" width="80px" height="50px"></div>
+									点亮图标
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_16.png" width="80px" height="50px"></div>
+									声望系统
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_17.png" width="80px" height="50px"></div>
+									CDK兑换
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_25.png" width="80px" height="60px"></div>
+									模拟实验室
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_30.png" width="80px" height="60px"></div>
+									游戏资料
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_20.png" width="80px" height="60px"></div>
+									领奖中心
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_18.png" width="80px" height="60px"></div>
+									官方微博
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_21.png" width="80px" height="60px"></div>
+									玩家论坛
+								</a>
+							</div>
+							<div class="enter_brand_list">
+								<a href="#">
+									<div class="enter_brand_list_1"><img src="img/public-spr_22.png" width="80px" height="60px"></div>
+									在线客服
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<!--  尾部 -->
+		<div id="footer">
+			<div class="footer_top">
+				<div class="footer_top_left">
+					<div class="footer_top_left_erweima">
+						<img src="img/erweima2.png">
+					</div>
+					<div class="footer_top_left_hreo">英雄我们在这等你</div>
+					<div class="footer_top_left_download">扫描下载《英雄联盟》官方APP，<br>获取最新最全的官方动态</div>
+				</div>
+				<div class="footer_top_mid">
+					<div class="footer_top_mid_top">温馨提示：本游戏适合18岁(含)以上玩家娱乐</div>
+					<div class="footer_top_mid_bot">
+						<div>抵制不良游戏</div>
+						<div>拒绝盗版游戏</div>
+						<div>注意自我保护</div>
+						<div>谨防受骗上当</div>
+						<div>适度游戏益脑</div>
+						<div>沉迷游戏伤身</div>
+						<div>合理安排时间</div>
+						<div>享受健康生活</div>
+					</div>
+				</div>
+				<div class="footer_top_right">
+					<div class="footer_top_right_select">
+						<select>
+							<option>英雄联盟 官方合作媒体</option>
+							<option>要我玩</option>
+							<option>木木不哭</option>
+							<option>17173</option>
+							<option>叶子猪</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer_bot">
+				<hr />
+				<div class="footer_bot_left">
+					<img src="img/tengxun.png">
+				</div>
+				<div class="footer_bot_right">
+					<a href="#">腾讯互动娱乐|</a>
+					<a href="#">服务条款|</a>
+					<a href="#">广告服务|</a>
+					<a href="#">腾讯游戏招聘|</a>
+					<a href="#">腾讯游戏客服|</a>
+					<a href="#">游戏活动|</a>
+					<a href="#">游戏地图|</a>
+					<a href="#">商务合作|</a>
+					<a href="#">腾讯网|</a>
+					<a href="#">网址导航|</a>
+					<div class="copy">COPYRIGHT © 1998 - 2017 TENCENT. ALL RIGHTS RESERVED.</div>
+					<span class="riot">© 2012 Riot Games, Inc. ALL RIGHTS RESERVED.</span><br />
+					<span class="riot">文网进字[2011] 004号 ISBN 978-7-89989-145-2|新出网证（粤）字010号|粤网文[2014]0633-233号</span>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
