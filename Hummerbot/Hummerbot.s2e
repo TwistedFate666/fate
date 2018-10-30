@@ -1,0 +1,416 @@
+﻿{
+  "extensionName":"Hummerbot",
+   "description":"An Extension Of Hummerbot",  
+  "homepage":"https://github.com/keywish/keywish-hummer-bot",
+  "version":"1.0",
+  "author":"Twisted ",
+  "sort":"0",
+  "javascriptURL":"js/Hummerbot.js",
+  "firmware":"1.0",
+  "extensionport":"0",
+  "blockSpecs":[
+     [ "h",
+	   "Hummerbot Program",
+	   "runArduino",    	   
+        {
+	   	  "src":"Hummerbot Program",
+   		  "setup":"Serial.begin(9600);\n\hbot.init();\n\hbot.SetControlMode(E_BLUETOOTH_CONTROL);\n",
+		  "inc":"#include \"Hummerbot.h\"\n#include \"ProtocolParser.h\"\n#include \"KeyMap.h\"\n#include \"debug.h\"\n",
+		  "def":"ProtocolParser *mProtocol = new ProtocolParser();\n\Hummerbot hbot;\n",                                                                                                                                                                                                                                                                                                                                                
+		  "work":"",
+		  "loop":""		 		  		
+		}
+     ],
+	[
+	  "w",
+	  "SetIrPin %n",
+	  "SetIrPin",
+	  "12",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SetIrPin({0});\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "w",
+	  "SetUltrasonicPin Trig_Pin %n Echo_Pin %n Sevo_Pin %n",
+	  "SetUltrasonicPin",
+	  "2",
+	  "3",
+	  "13",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SetUltrasonicPin({0},{1},{2});\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "w",
+	  "SetInfraredAvoidancePin Left_Pin %s Right_Pin %s",
+	  "SetInfraredAvoidancePin",
+	  "A3",
+	  "A4",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SetInfraredAvoidancePin({0},{1});\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "w",
+	  "SetInfraredTracingPin  Pin1 %s  Pin2 %s  Pin3 %s",
+	  "SetInfraredTracingPin",
+	  "A0",
+	  "A1",
+	  "A2",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SetInfraredTracingPin({0},{1},{2});\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "w",
+	  "SetPs2xPin clk %n cmd %n att %n dat %n",
+	  "SetPs2xPin",
+	  "11",
+	  "7",
+	  "8",
+	  "4",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SetPs2xPin({0},{1},{2},{3});\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+		  "w",
+		  "play %d.controlmode",
+		  "play",
+		  "蓝牙操控",
+		     {
+			    "setup":"",
+				"inc":"",
+				"def":"",
+				"work":" hbot.SetControlMode({0});\n",
+				"loop":""
+			 }
+		],
+	[
+		  "w",
+		  "SetSpeed %n",
+		  "SetSpeed",
+		  "0",
+		     {
+			    "setup":"",
+				"inc":"",
+				"def":"",
+				"work":" hbot.SetSpeed({0});\n",
+				"loop":""
+			 }
+		],
+	 [
+	  "r",
+	  "GetSpeed",
+	  "GetSpeed",
+	   {
+	      "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetSpeed();\n",
+		  "loop":""		 		  
+	   }
+	],
+	 
+	 [
+	  "w",
+	  "GoForward",
+	  "GoForward",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GoForward();\n",
+		  "loop":""		 		  
+		}
+	],
+	 [
+	  "w",
+	  "GoBack",
+	  "GoBack",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GoBack();\n",
+		  "loop":""		 		  
+		}
+	],
+	
+	 [
+	  "w",
+	  "TurnLeft",
+	  "TurnLeft",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.TurnLeft();\n",
+		  "loop":""		 		  
+		}
+	],
+	 [
+	  "w",
+	  "TurnRight",
+	  "TurnRight",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.TurnRight();\n",
+		  "loop":""		 		  
+		}
+	],
+	
+	 [
+	  "w",
+	  "KeepStop",
+	  "KeepStop",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.KeepStop();\n",
+		  "loop":""		 		  
+		}
+	],
+	
+	[
+	  "w",
+	  "Drive %n",
+	  "Drive",
+	  "0",
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.Drive({0});\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "r",
+	  "GetRobotDegree",
+	  "GetRobotDegree",
+	
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetRobotDegree();\n",
+		  "loop":""		 		  
+		}
+	],		  
+	[
+	  "w",
+	  "SpeedUp",
+	  "SpeedUp",	 
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SpeedUp(int8_t Duration);\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "w",
+	  "SpeedDown",
+	  "SpeedDown",	 
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.SpeedDown(int8_t Duration);\n",
+		  "loop":""		 		  
+		}
+	],
+    
+	[
+	 "r",
+	 "GetInfraredAvoidanceRightValue",
+	 "GetInfraredAvoidanceRightValue",	   
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetInfraredAvoidanceRightValue();\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	 "r",
+	 "GetInfraredAvoidanceLeftValue",
+	 "GetInfraredAvoidanceLeftValue",	   
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetInfraredAvoidanceLeftValue();\n",
+		  "loop":""		 		  
+		}
+	],
+	[
+	  "r",
+	  "getValue",
+	  "getValue",
+	
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.getValue();\n",
+		  "loop":""		 		  
+		}
+	],		  
+	
+ [
+	  "r",
+	  "GetUltrasonicFrontDistance",
+	  "GetUltrasonicFrontDistance",
+	
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetUltrasonicFrontDistance();\n",
+		  "loop":""		 		  
+		}
+	],
+[
+	  "r",
+	  "GetUltrasonicRightDistance",
+	  "GetUltrasonicRightDistance",
+	
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetUltrasonicRightDistance();\n",
+		  "loop":""		 		  
+		}
+	],		
+[
+	  "r",
+	  "GetUltrasonicLeftDistance",
+	  "GetUltrasonicLeftDistance",
+	
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.GetUltrasonicLeftDistance();\n",
+		  "loop":""		 		  
+		}
+	],
+[
+	 "r",
+	 "ButtonDataByte",
+	 "ButtonDataByte",	   
+	    {
+		  "setup":"",
+		  "inc":"",
+		  "def":"",
+		  "work":"hbot.ButtonDataByte();\n",
+		  "loop":""		 		  
+		}
+	],	   		
+              ],
+  "menus":{
+          "controlmode":["蓝牙操控","红外遥控","红外循迹","红外避障","超声波避障","PS2操控","NRF24L01操控","红外超声波避障","钢琴模式"]
+	},	 
+  "values":{
+          "蓝牙操控":0,
+		  "红外遥控":1,
+		  "红外循迹":2,
+		  "红外避障":3,
+		  "超声波避障":4,
+		  "PS2操控":5,
+		  "NRF24L01操控":6,
+		  "红外超声波避障":7,
+		  "钢琴模式":8,		
+      },
+  "translators":{
+               "zh_CN":{	
+			      "SetIrPin %n":"红外线感应器引脚 %n",
+                   "SetUltrasonicPin Trig_Pin %n Echo_Pin %n Sevo_Pin %n":"超声波感应器 Trig引脚 %n Echo引脚 %n Sevo引脚 %n ",                   				   				   
+			       "SetInfraredAvoidancePin Left_Pin %s Right_Pin %s":"红外避障感应器 Left引脚 %s Right引脚%s",
+				   "SetInfraredTracingPin  Pin1 %s  Pin2 %s  Pin3 %s":"红外循迹感应器引脚  Pin1 %s  Pin2 %s  Pin3 %s",
+				   "SetPs2xPin clk %n cmd %n att %n dat %n":"Ps2x感应器 clk引脚 %n cmd引脚 %n att引脚 %n dat引脚 %n",			      
+				   "play %d.controlmode":"操控模式 %d.controlmode",
+				   "SetSpeed %n":"速度值 %n",
+				   "GetSpeed":"读取速度值",
+                   "GoForward":"前进",
+				   "GoBack":"后退",
+				   "TurnLeft":"左转",
+				   "TurnRight":"右转",				  
+				   "KeepStop":"停止",
+				   "Drive %n":"转弯角度 %n",
+                   "GetRobotDegree":"读取转弯角度",				   
+                   "SpeedUp":"加速",
+                   "SpeedDown":"减速",				   			       
+                   "GetInfraredAvoidanceRightValue":"读取红外避障右值",
+                   "GetInfraredAvoidanceLeftValue":"读取红外避障左值",
+                   "getValue":"读取循迹值",				   
+				   "GetUltrasonicFrontDistance":"读取前方超声波距离",
+				   "GetUltrasonicRightDistance":"读取右侧超声波距离",
+				   "GetUltrasonicLeftDistance":"读取左侧超声波距离",				  
+				   "ButtonDataByte":"读取Ps2X遥控按钮键",                   				  				  				  
+			   }
+   
+  }
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
